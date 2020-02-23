@@ -1,73 +1,94 @@
 ## [EN]
 
-# Project Overview: Budget App UI
+# Project Overview: Social Media App UI
 
-"Our budget app will teach us how to code and display visualizations of our Data. We will learn how to create a bar chart combining different widgets and we will also learn how to build our own custom painter to create a real progress bar.
+"Our social media app will teach us how to use a variety of widgets like tab bars, side menu and custom clippers. All which are popular in social media apps today.
 
-The first screen has a bar chart of our weekly expenses and divides our speding up into categories.
+We will learn how to code our own custom clippers to shape images and how to add animations to our post scrolling to make our app come to life.
 
-The color of the bar for each category changes based on how much money we have reamaining.
+The first screen we will create is our log in screen for our users.
 
-In our category screen we can view our remaning amount of money and expense."
+The next screen is our home screen where we will display the users that we're following and the posts in our feed.
+
+Then we will add a side menu to navigate to the profile screen which displays information about our current user"
 
 # Data and Models
 
 Among the initial files made available by instructor Marcus NG, we will have:
 
-> <b>expense_model.dart</b>
+> <b>post_model.dart</b>
 >
->   Contains the "Expense" class, in which the attributes include:
->   - name (String)
->   - cost (double)
+>   Responsible for the "Post" class, it contains the following attributes:
+>   - imageUrl (String)
+>   - author (User)
+>   - title (String)
+>   - location (String)
+>   - likes (int)
+>   - comments (int)
 
-> <b>category_model.dart</b>
+> <b>user_model.dart</b>
 >
->   Responsible for the "Category" class, it contains the following attributes
->   - address (String)
->   - maxAmount (double)
->   - menu (List\<Expense>)
+>   Responsible for the "User" class, it contains the following attributes
+>   - profileImageUrl (String)
+>   - backgroundImageUrl (String)
+>   - name (String)
+>   - following (int)
+>   - followers (int)
+>   - posts (List\<Post>)
+>   - favorites (List\<Post>)
 
 > <b>data.dart</b>
 >
->   The data.dart file is ordered as follows:
->   - The first variable is called "rand", wich instance Random;
->   - Next we declare a list called "weeklySpending" and this is going to populate the data inside weekly spending bar graph.
->   - Creation of "_generateExpenses" function wich return a list of "Expense"
->   - List of "Category"
+>   - List of posts previously instantiated
+>   - List of users with profileImageUrl
+>   - List of current user posts
+>   - List of current user favorites posts
+>   - Current user data
+
 
 ## [PT-BR]
 
 # Visão Geral do Projeto: Interface do Aplicativo de Despesas
 
-"Nosso aplicativo de despesas nos ensinará como desenvolver e exibir visualizações de nossos dados. Aprenderemos como criar um gráfico em barra, combinando diferentes widgets que também aprenderemos a construir nosso próprio custom painter, para criar barras de progresso reais.
+"Nosso aplicativo de mídia social nos ensinará como usar uma variedade de widgets como abas, menu lateral e "clippers" customizados. Todos eles são populares em aplicativos de mídia social.
 
-A primeira tela terá gráficos em barras de nossas despesas semanais e dividirá em categorias.
+Aprenderemos como codificar nossos próprios "clippers" customizados para definir formatos de imagens e como adicionar animações em nossa rolagem de postagens para dar vida ao nosso app.
 
-A coloração das barras de cada categoria, muda de acordo com a quantidade de dinheiro que está disponível.
+A primeira tela que criaremos será a tela de login para nossos usuários.
 
-Na nossa tela de categoria, podemos visualizar quanto de dinheiro há disponível e gastos."
+A próxima tela será nossa tela inicial que mostrará os usuários que estamos seguindo e as postagens em nosso feed.
 
-# Dados e Models
+Então, adicionaremos um menu lateral para navegarmos até a tela de perfil, que mostrará informações sobre o usuário."
+
+# Data and Models
 
 Dentre os arquivos iniciais disponibilizados pelo instrutor Marcus NG, teremos:
 
-> <b>expense_model.dart</b>
+> <b>post_model.dart</b>
 >
->   Contem a classe "Expense" que dentre os atributos, contéma:
->   - name (String)
->   - cost (double)
+>   Contem a classe "Post" que dentre os atributos, contém os seguintes atributos:
+>   - imageUrl (String)
+>   - author (User)
+>   - title (String)
+>   - location (String)
+>   - likes (int)
+>   - comments (int)
 
-> <b>category_model.dart</b>
+> <b>user_model.dart</b>
 >
->   Responsável pela classe "Category", mantém como atributos:
->   - address (String)
->   - maxAmount (double)
->   - menu (List\<Expense>)
+>   Contem a classe "User" que dentre os atributos, contém os seguintes atributos:
+>   - profileImageUrl (String)
+>   - backgroundImageUrl (String)
+>   - name (String)
+>   - following (int)
+>   - followers (int)
+>   - posts (List\<Post>)
+>   - favorites (List\<Post>)
 
 > <b>data.dart</b>
 >
->   O arquivo data.dart segue a seguinte ordem:
->   - A primeira variável é chamada de "rand", que instancia Random;
->   - A seguir, declaramos uma list chamada "weeklySpending"  e irá popular os dados dentro do gráfico de gastos semanais.
->   - Criação da função "_generateExpenses" que retorna uma lista de "Expense"
->   - Lista de "Categoria"
+>   - Lista de postagens previamente instanciados
+>   - List de usuários com profileImageUrl (Caminho da imagem de perfil)
+>   - List das postagens do usuário atual
+>   - List das postagens favoritas do usuário atual
+>   - Dados do usuário atual

@@ -53,7 +53,7 @@ Dentre os arquivos iniciais disponibilizados pelo instrutor Marcus NG, teremos:
 
 > <b>expense_model.dart</b>
 >
->   Contem a classe "Expense" que dentre os atributos, contéma:
+>   Contem a classe "Expense" que dentre os atributos, contém:
 >   - name (String)
 >   - cost (double)
 
