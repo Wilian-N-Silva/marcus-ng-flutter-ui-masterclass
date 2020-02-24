@@ -75,7 +75,12 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               SizedBox(height: 40.0),
               GestureDetector(
-                onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => HomeScreen())),
+                onTap: () => Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => HomeScreen(),
+                  ),
+                ),
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 60.0),
                   alignment: Alignment.center,
