@@ -16,7 +16,7 @@ class ProfileClipper extends CustomClipper<Path>{
 
   @override
   bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return null;
+    return false;
   }
 
 }
